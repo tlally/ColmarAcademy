@@ -1,2 +1,114 @@
 
 /* Universal Styles */
+
+html {
+  font-family: helvetica;
+  font-size: 16px;
+
+}
+
+div {
+  display: block;
+  border: 1px solid black;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Header */
+header {
+  background-color: white;
+  display: block;
+
+
+
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.logo img {
+  max-height: 2rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: row;
+
+}
+
+nav ul li {
+  padding: .5rem;
+}
+
+/* Banner */
+
+.banner {
+  background-color: gray;
+}
+
+.banner-box {
+  display: flex;
+  flex-direction: row;
+}
+
+.banner-box .banner-img {
+  padding: 2rem 1.5rem 2rem 1.5rem;
+  max-width: 60%;
+
+}
+
+.banner-box img{
+  max-width: 100%;
+
+}
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: left;
+  padding-right: 4.5rem;
+}
+
+.banner-content h1 {
+  display: flex;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+
+}
+
+.banner-content h2 {
+  display: flex;
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+
+}
+
+.banner-content p {
+  display: flex;
+  background-color: darkgray;
+  color: white;
+  padding: .25rem 0;
+  text-align: center;
+
+}
