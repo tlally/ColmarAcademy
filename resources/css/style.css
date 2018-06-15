@@ -30,10 +30,21 @@ p {
   margin: 0 auto;
 }
 
+
+
 .section-heading {
   text-align: center;
   padding-top: 2rem;
 }
+
+@media only screen and (max-width:685px){
+
+  .container {
+    max-width: 100%;
+  }
+
+}
+
 
 /* Header */
 header {
@@ -98,6 +109,38 @@ nav ul li {
   padding: .5rem;
 }
 
+.mobile-nav {
+  display: none;
+}
+
+@media only screen  and (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    height: 2rem;
+  }
+
+  .mobile-nav ul {
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .mobile-nv ul img {
+    height: 2rem;
+  }
+
+}
+
 /* Banner */
 
 .banner {
@@ -111,8 +154,8 @@ nav ul li {
 }
 
 .banner-box .banner-img {
-  padding: 2rem 1.5rem 2rem 1.5rem;
-  max-width: 60%;
+padding: 2rem .75rem 2rem 1.5rem;
+max-width: 60%;
 
 }
 
@@ -128,6 +171,7 @@ nav ul li {
   align-content: center;
   text-align: left;
   padding-right: 4.5rem;
+  padding-left: .75rem;
 }
 
 .banner-content h1 {
@@ -152,6 +196,32 @@ nav ul li {
   padding: .5rem 0;
   text-align: center;
   font-size: 1rem;
+
+
+}
+
+@media only screen and (max-width:685px) {
+
+  .banner-box {
+    flex-direction: column;
+  }
+
+  .banner-box .banner-img {
+    max-width: 100%;
+    padding: 0 0 1rem 0;
+  }
+
+  .banner-content {
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .banner-content .button {
+    font-weight: 600;
+    padding: .75rem;
+  }
+
+
+
 
 }
 
@@ -236,6 +306,62 @@ a {
   text-align: left;
 }
 
+.mobile-img {
+  display: none;
+}
+
+@media only screen and (max-width: 685px) {
+  .main {
+    display: none;
+  }
+
+  .mini {
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0 0 2rem 0;
+  }
+
+  .mini-img {
+    padding: 0;
+    max-width: 100%;
+  }
+
+  .mini-spot {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .desktop-img {
+    display: none;
+  }
+
+  .mobile-img {
+    display: flex;
+    padding: 0 0 3rem 0;
+  }
+
+  .mini-content {
+    max-width: 100%;
+
+  }
+
+  .mini-content h4 {
+    font-size: 2rem;
+  }
+
+  .mini-content p {
+    font-size: 1.25rem;
+    font-weight: 100;
+  }
+
+  .mini-content h4,
+  p,
+  a {
+    padding: 1rem;
+
+  }
+}
+
 /* Start Learning */
 
 .learning {
@@ -294,6 +420,46 @@ a {
 .course .learn-content {
   padding: 1rem;
 
+}
+
+.mobile-learn {
+  display: none;
+}
+
+@media only screen and (max-width: 685px) {
+  .grid {
+    display: none;
+  }
+
+  .mobile-learn {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .mobile-learn ul {
+    padding: 1rem;
+
+  }
+
+  .mobile-learn ul li {
+    background-color: hsl(189, 100%, 27%);
+    margin: .25rem;
+    padding: 1rem;
+    color: hsl(187, 2%, 94%);
+    font-size: 1.25rem;
+    font-weight: 500;
+  }
+
+  .learning h2 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .learning {
+    boarder-top: 1px solid hsl(187, 2%, 94%);
+    boarder-bottom: 1px solid hsl(187, 2%, 94%);
+  }
 }
 
 /* Thesis Content */
